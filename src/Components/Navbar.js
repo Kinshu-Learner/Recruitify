@@ -7,26 +7,22 @@ const Navbar = () => {
 
     let links = [
         {
-            id: 1,
-            link: "for candidates",
-        },
-        {
             id: 2,
             link: "about",
         },
         {
             id: 3,
-            link: "signup"
+            link: "sign up"
         },
         {
             id: 4,
-            link: "login"
+            link: "log in"
         },
     ]
 
     return (
 
-        <nav className='bg-indigo-100 flex justify-around h-20 items-center md:relative'>
+        <nav className='bg-gradient-to-r from-indigo-100 to-purple-100 flex justify-around h-20 items-center md:relative'>
 
             <a href='/' className="group hover:scale-110 box-shadow-hover text-3xl font-bold hover:text-purple-500">
 
@@ -60,7 +56,7 @@ const Navbar = () => {
                 {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
             </button>
 
-            <ul className={`flex flex-col justify-center items-center md:hidden absolute top-0 left-0 ${nav ? 'h-[40vh]' : 'h-0'} w-full ${nav ? 'translate-y-16' : '-translate-y-40'}  duration-300 ease-in-out bg-indigo-100 rounded-b-full`}>
+            <ul className={`flex flex-col justify-center items-center md:hidden absolute top-0 left-0 ${nav ? 'h-[40vh]' : 'h-0'} w-full ${nav ? 'translate-y-16' : '-translate-y-40'}  duration-300 ease-in-out bg-gradient-to-r from-indigo-100 to-purple-100 rounded-b-full`}>
                 {links.map(({ id, link }) => {
                     return <li key={id} className='text-xl font-medium my-1 md:mx-4 capitalize'>
                         <a href={link} className="px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">

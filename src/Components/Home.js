@@ -4,9 +4,9 @@ import job_interview from '../Assets/Job Interview _Monochromatic.svg'
 const Home = () => {
     return (
 
-        <div className='flex justify-between mx-auto max-w-screen-lg h-[700px] items-center '>
+        <div className='flex flex-col md:flex-row justify-between mx-auto mb-64 md:my-20 max-w-screen-lg h-[700px] items-center '>
 
-            <div className="m-4 max-w-screen-lg mx-auto md:relative flex flex-col justify-center">
+            <div className="m-4 my-8 max-w-screen-lg mx-auto md:relative flex flex-col justify-center">
 
                 <div className="absolute z-[-1] h-36 w-36 opacity-70 ease-in-out bg-purple-500 rounded-full top-[250px] md:top-[-40px] left-4 mix-blend- animate-blob1 filter blur-xl"></div>
                 <div className="absolute z-[-1] h-36 w-36 opacity-70 ease-in-out bg-indigo-400 rounded-full top-[450px] md:top-40 md:left-[300px] left-[240px] mix-blend-multiply animate-blob2 animation-delay-1000 filter blur-xl "></div>
@@ -24,7 +24,7 @@ const Home = () => {
 
             </div>
 
-            <img src={job_interview} alt="" className='mx-4 hidden md:flex' />
+            <img src={job_interview} alt="" className='mx-4 relative ' />
 
         </div>
 

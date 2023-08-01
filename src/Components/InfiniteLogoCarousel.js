@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import scrollBackground from '../Assets/artur-solarz-hOLMEKvIBvI-unsplash.jpg';
 
 export default class InfiniteLogoCarousel extends Component {
     render() {
@@ -47,9 +48,11 @@ export default class InfiniteLogoCarousel extends Component {
             ]
         };
         return (
-            <div className="">
+            <div className="my-20">
                 
-                <div className="text-3xl font-medium pb-10 text-center mb-12 border-b-2 border-gray-300"><span className='font-bold'>10,00,000+ </span>professionals from over <span className='font-bold'>12,000</span> companies are using <span className='font-bold'>Recruitify.</span></div>
+                <div className="relative text-3xl font-medium py-10 text-center mb-12 border-b-2 border-gray-300"><span className='font-bold'>10,00,000+ </span>professionals from over <span className='font-bold'>12,000</span> companies are using <span className='font-bold'>Recruitify.</span>
+                <img src={scrollBackground} alt="" className='absolute top-0 z-[-1] h-full w-full opacity-70'/>
+                </div>
 
                 <div className='mainContainer border-b-2 border-gray-300 pb-8 mb-12'>
                 <Slider {...settings}>

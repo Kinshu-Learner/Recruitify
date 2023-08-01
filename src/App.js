@@ -1,6 +1,9 @@
+import Employee from './Components/Employee';
+import Employer from './Components/Employer';
 import Home from './Components/Home';
 import InfiniteLogoCarousel from './Components/InfiniteLogoCarousel';
 import Navbar from './Components/Navbar';
+import Testimonials from './Components/Testimonials';
 
 function App() {
   return (
@@ -8,6 +11,9 @@ function App() {
       <Navbar/>
       <Home/>
       <InfiniteLogoCarousel/>
+      <Employer/>
+      <Employee/>
+      <Testimonials/>
     </div>
   );
 }

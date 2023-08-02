@@ -4,7 +4,7 @@ import job_interview from '../Assets/Job Interview _Monochromatic.svg'
 const Home = () => {
     return (
 
-        <div className='flex flex-col md:flex-row justify-between mx-auto mb-64 md:my-20 max-w-screen-lg h-[700px] items-center '>
+        <div name='Home' className='flex flex-col md:flex-row justify-between mx-auto mb-64 md:my-20 max-w-screen-lg h-[700px] items-center '>
 
             <div className="m-4 my-8 max-w-screen-lg mx-auto md:relative flex flex-col justify-center">
 

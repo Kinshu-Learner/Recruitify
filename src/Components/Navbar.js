@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
 
@@ -7,17 +8,17 @@ const Navbar = () => {
 
     let links = [
         {
+            id: 1,
+            link: "for employers",
+        },
+        {
             id: 2,
-            link: "about",
+            link: "for job seekers",
         },
         {
             id: 3,
-            link: "sign up"
-        },
-        {
-            id: 4,
-            link: "log in"
-        },
+            link: "about",
+        }
     ]
 
     return (
@@ -43,12 +44,22 @@ const Navbar = () => {
             <ul className="hidden md:flex">
 
                 {links.map(({ id, link }) => {
-                    return <li key={id} className='font-medium mx-2 md:mx-4 capitalize'>
-                        <a href={link} className="px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">
+                    return <li key={id} className='font-medium mx-2 md:mx-4 capitalize cursor-pointer'>
+                        <Link to={link} smooth duration={500} className="px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">
                             {link}
-                        </a>
+                        </Link>
                     </li>
                 })}
+                <li className='font-medium mx-2 md:mx-4 capitalize'>
+                    <a href="/login" className="px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">
+                        Log In
+                    </a>
+                </li>
+                <li className='font-medium mx-2 md:mx-4 capitalize'>
+                    <a href="/signup" className="px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">
+                        Sign Up
+                    </a>
+                </li>
 
             </ul>
 
@@ -58,12 +69,22 @@ const Navbar = () => {
 
             <ul className={`flex flex-col justify-center items-center md:hidden absolute top-0 left-0 ${nav ? 'h-[40vh]' : 'h-0'} w-full ${nav ? 'translate-y-16' : '-translate-y-40'}  duration-300 ease-in-out bg-gradient-to-r from-indigo-100 to-purple-100 rounded-b-full`}>
                 {links.map(({ id, link }) => {
-                    return <li key={id} className='text-xl font-medium my-1 md:mx-4 capitalize'>
-                        <a href={link} className="px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">
+                    return <li key={id} className='font-medium py-2 mx-2 md:mx-4 capitalize cursor-pointer'>
+                        <Link to={link} smooth duration={500} className="text-lg px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">
                             {link}
-                        </a>
+                        </Link>
                     </li>
                 })}
+                <li className='font-medium mx-2 py-2 md:mx-4 capitalize'>
+                    <a href="/login" className="text-lg px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">
+                        Log In
+                    </a>
+                </li>
+                <li className='font-medium mx-2 py-2 md:mx-4 capitalize'>
+                    <a href="/signup" className="text-lg px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">
+                        Sign Up
+                    </a>
+                </li>
             </ul>
 
         </nav>

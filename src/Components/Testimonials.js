@@ -7,7 +7,7 @@ import avataaars4 from '../Assets/avataaars4.svg'
 
 const Testimonials = () => {
     return (
-        <div className='max-w-screen-lg flex flex-col justify-center items-center mx-auto'>
+        <div name='testimonials' className='max-w-screen-lg flex flex-col justify-center items-center mx-auto my-10'>
 
             <div className="text-4xl font-bold my-8">Words of Delight</div>
             <div className="text-3xl font-medium mb-12 text-center">Hear What Our Users Have to Say</div>

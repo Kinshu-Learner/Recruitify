@@ -8,7 +8,7 @@ import { BsLink45Deg } from 'react-icons/bs';
 
 const Employee = () => {
     return (
-        <div className='flex flex-col-reverse md:flex-row my-40 max-w-screen-lg justify-center items-center mx-auto'>
+        <div name='for job seekers' className='flex flex-col-reverse md:flex-row my-40 max-w-screen-lg justify-center items-center mx-auto'>
 
             <div className="flex flex-col m-4">
 

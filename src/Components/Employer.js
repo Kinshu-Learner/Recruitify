@@ -7,7 +7,7 @@ import { BsGlobeAmericas } from 'react-icons/bs';
 
 const Employer = () => {
     return (
-        <div className='flex flex-col md:flex-row my-40 max-w-screen-lg justify-center items-center mx-auto'>
+        <div name='for employers' className='flex flex-col md:flex-row my-40 max-w-screen-lg justify-center items-center mx-auto'>
 
             <img src={emprImg} alt="" className='h-80 relative md:flex mb-8' />
 

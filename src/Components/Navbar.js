@@ -70,7 +70,7 @@ const Navbar = () => {
             <ul className={`flex flex-col justify-center items-center md:hidden absolute top-0 left-0 ${nav ? 'h-[40vh]' : 'h-0'} w-full ${nav ? 'translate-y-16' : '-translate-y-40'}  duration-300 ease-in-out bg-gradient-to-r from-indigo-100 to-purple-100 rounded-b-full`}>
                 {links.map(({ id, link }) => {
                     return <li key={id} className='font-medium py-2 mx-2 md:mx-4 capitalize cursor-pointer'>
-                        <Link to={link} smooth duration={500} className="text-lg px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">
+                        <Link to={link} onClick={()=>setNav(!nav)} smooth duration={500} className="text-lg px-4 py-2 hover:bg-purple-500 rounded-xl hover:text-white duration-300">
                             {link}
                         </Link>
                     </li>

@@ -13,7 +13,7 @@ const FooterAndAbout = () => {
           name="about"
           className="p-8 m-6 rounded-2xl bg-purple-200 md:w-1/2"
         >
-          <div className="text-4xl font-bold w-fit text-indigo-500 mb-4 border-b-2 border-indigo-500 pb-1">
+          <div className="text-4xl font-bold text-indigo-500 mb-4 border-b-4 border-indigo-500 pb-1 w-3/4">
             About Us
           </div>
           <div className="">
@@ -42,7 +42,7 @@ const FooterAndAbout = () => {
           </div>
         </div>
 
-        <div className="m-6 flex flex-col xl:flex-row">
+        <div className="m-6 mx-12 flex flex-col xl:flex-row">
           <div className="md:m-12">
             <div className="text-lg font-medium border-b-2 border-black">
               Navigate

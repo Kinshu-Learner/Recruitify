@@ -48,7 +48,7 @@ export default class InfiniteLogoCarousel extends Component {
             ]
         };
         return (
-            <div className="my-20">
+            <div className="my-20 select-none">
                 
                 <div className="relative text-3xl font-medium py-10 text-center mb-12 border-b-2 border-gray-300"><span className='font-bold'>10,00,000+ </span>professionals from over <span className='font-bold'>12,000</span> companies are using <span className='font-bold'>Recruitify.</span>
                 <img src={scrollBackground} alt="" className='absolute top-0 z-[-1] h-full w-full opacity-70'/>

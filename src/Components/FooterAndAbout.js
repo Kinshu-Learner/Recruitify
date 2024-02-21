@@ -38,7 +38,7 @@ const FooterAndAbout = () => {
                 </div>
 
 
-                <div className="m-6 mx-12 flex flex-col xl:flex-row">
+                <div className="m-6 mx-12 md:mx-0 flex flex-col xl:flex-row">
 
                     <div className="md:m-12">
                         <div className="text-lg font-medium border-b-2 border-black">
